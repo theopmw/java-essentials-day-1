@@ -6,7 +6,6 @@ public class ZellersCongruence {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-//        Scanner sc = new Scanner(System.in);
         int choice = 0;
         do {
             // Prompt user to enter a year, month and day and store in variables
@@ -26,11 +25,12 @@ public class ZellersCongruence {
                 month += 12;
                 year--;
             }
-            // Compute the answer
-            int k = year % 100; // The year of the century
-            int j = year / 100; // the century
+
+            // List variables/Compute answer
             int d = day;
             int m = month;
+            int k = year % 100; // The year of the century
+            int j = year / 100; // the century
             int h = d + 13*(m + 1) / 5 + k + k / 4 + j / 4 + 5 * j;
             h = h % 7;
 //        int h = 13*(m + 1) / 5;
@@ -86,6 +86,5 @@ public class ZellersCongruence {
 
         }while (choice == 1);
         input.close();
-
     }
 }
