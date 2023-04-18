@@ -7,6 +7,7 @@ public class ZellersCongruence {
         Scanner input = new Scanner(System.in);
 
         int choice = 0;
+        // do while loop to reset task once complete on user input
         do {
             // Prompt user to enter a year, month and day and store in variables
             System.out.print("Enter year (in YYYY format): ");
